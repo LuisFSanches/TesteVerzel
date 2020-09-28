@@ -1,0 +1,19 @@
+.nav-dashboard {
+  width: 100%;
+  background: #24292d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+}
+.nav-dashboard img {
+  width: 40px;
+}
+.nav-dashboard .user-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-dashboard .user-data span {
+  color: var(--color-text-primary);
+}

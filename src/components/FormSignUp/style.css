@@ -1,0 +1,73 @@
+.error_message_deactivate {
+  display: none;
+}
+
+.error_message_activate {
+  max-width: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #ffe2e7;
+  padding: 5px 0;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.error_message_activate button {
+  padding: 0;
+  margin: 0;
+}
+.error_message_activate .error_message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  font-size: 13px;
+  color: black;
+  font-weight: 400;
+}
+
+.signup-container {
+  max-width: 450px;
+  width: 100%;
+  background: var(--color-background);
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+}
+
+.signup-container .field-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.signup-container .field-group .field {
+  width: 65%;
+  padding: 5px;
+}
+.signup-container .field-group #smaller {
+  width: 30%;
+}
+.signup-container .field {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px;
+}
+.signup-container .field input {
+  padding: 16px;
+}
+.signup-container .field label {
+  font-size: 14px;
+}
+.signup-container button {
+  padding: 20px;
+  font-size: 17px;
+}
+@media (max-width: 767px) {
+  .signup-container {
+    width: 95%;
+    justify-content: center;
+    margin-left: 10px;
+  }
+}

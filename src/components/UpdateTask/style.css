@@ -1,0 +1,33 @@
+.update-container {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: 80px;
+}
+.update-container h1 {
+  color: var(--color-text-tertiary);
+  margin-bottom: 20px;
+}
+.update-container form {
+  background: white;
+  padding: 20px;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+}
+.update-container .field {
+  margin-bottom: 10px;
+}
+.update-container .field input {
+  padding: 10px;
+}
+.update-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+}

@@ -1,0 +1,104 @@
+.tasklist-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 30px 10px;
+  box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
+}
+
+.tasks-table {
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.tasks-table td,
+.tasks-table th {
+  text-align: center;
+  padding: 8px;
+}
+
+.tasks-table .task_finished td {
+  border-right: 1px solid #f8f8f8;
+  font-size: 15px;
+  background: green;
+}
+
+.tasks-table thead th {
+  color: #ffffff;
+  background: var(--color-banner);
+}
+
+.tasks-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+@media (max-width: 700px) {
+  .tasks-table {
+    display: block;
+    width: 100%;
+  }
+  .table-wrapper:before {
+    content: "Scroll horizontally >";
+    display: block;
+    text-align: right;
+    font-size: 11px;
+    color: white;
+    padding: 0 0 10px;
+  }
+  .tasks-table thead,
+  .tasks-table tbody,
+  .tasks-table thead th {
+    display: block;
+  }
+  .tasks-table thead th:last-child {
+    border-bottom: none;
+  }
+  .tasks-table thead {
+    float: left;
+  }
+  .tasks-table tbody {
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+  }
+  .tasks-table td,
+  .tasks-table th {
+    padding: 20px 0.625em 0.625em 0.625em;
+    height: 60px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 120px;
+    font-size: 15px;
+    text-overflow: ellipsis;
+  }
+  .tasks-table thead th {
+    text-align: left;
+    border-bottom: 1px solid #f7f7f9;
+  }
+  .tasks-table tbody tr {
+    display: table-cell;
+  }
+  .tasks-table tbody tr:nth-child(odd) {
+    background: none;
+  }
+  .tasks-table tr:nth-child(even) {
+    background: transparent;
+  }
+  .tasks-table tr td:nth-child(odd) {
+    background: #f8f8f8;
+    border-right: 1px solid #e6e4e4;
+  }
+  .tasks-table tr td:nth-child(even) {
+    border-right: 1px solid #e6e4e4;
+  }
+  .tasks-table tbody td {
+    display: block;
+    text-align: center;
+  }
+}
